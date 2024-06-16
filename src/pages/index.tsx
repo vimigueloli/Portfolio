@@ -22,12 +22,12 @@ export default function Home() {
             <div className="text-white line-center flex-wrap gap-8 text-3xl my-12">
                 <div className="line-center w-full">
                     <div className="w-32 h-32 rounded-full border overflow-hidden border-white">
-                        <img src={data.avatar_url} />
+                        <img src={data?.avatar_url} />
                     </div>
                 </div>
-                <div className="w-full line-center">{data.name}</div>
+                <div className="w-full line-center">{data?.name}</div>
                 <div className="w-full line-center px-12 text-justify text-xl">
-                    {data.bio}
+                    {data?.bio}
                 </div>
             </div>
             <div className="line-center gap-16 flex-wrap pb-32">
