@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import VintageInternetProject from "./vintageInternetProject";
 
 interface RepoProps {
     id: any;
@@ -24,25 +25,27 @@ interface RepoProps {
     usesCustomOpenGraphImage: boolean;
 }
 
-interface ProjectProps {
+export interface ProjectProps {
     id: string;
     project: RepoProps;
 }
 
-export default function Project({ id, project }: ProjectProps) {
-    function handleTitles(title: string) {
-        let input = title.replace("_", " ");
-        input = input.replace("-", " ");
-        let titles = input.split(" ");
-        let output = "";
-        titles.forEach((item: string) => {
-            output += item[0].toUpperCase() + item.substring(1);
-        });
-        output = output.replace(/([a-z])([A-Z])/g, "$1 $2");
-        output = output.replace(/([A-Z])([A-Z][a-z])/g, "$1 $2");
-        return output.trim();
-    }
+export function handleTitles(title: string) {
+    let input = title.replace("_", " ");
+    input = input.replace("-", " ");
+    let titles = input.split(" ");
+    let output = "";
+    titles.forEach((item: string) => {
+        output += item[0].toUpperCase() + item.substring(1);
+    });
+    output = output.replace(/([a-z])([A-Z])/g, "$1 $2");
+    output = output.replace(/([A-Z])([A-Z][a-z])/g, "$1 $2");
+    return output.trim();
+}
 
+export default function Project({ id, project }: ProjectProps) {
+    return <VintageInternetProject project={project} id={id} />;
+    /*
     return (
         <a
             href={project.homepageUrl}
@@ -55,7 +58,7 @@ export default function Project({ id, project }: ProjectProps) {
                     href={project.url}
                     target="_blank"
                     title={`Repositório ${handleTitles(project.name)}`}
-                    className="w-10 h-10 rounded-md bg-black/50 backdrop-blur-xl border border-transparent with-transition shadow-xl z-50 line-center hover:border-white"
+                    className="w-10 h-10 rounded-md bg-black border border-transparent with-transition shadow-xl z-50 line-center hover:border-white"
                 >
                     <FaGithub size={25} />
                 </a>
@@ -75,5 +78,5 @@ export default function Project({ id, project }: ProjectProps) {
                 <img src={project.openGraphImageUrl} />
             </a>
         </a>
-    );
+    );*/
 }

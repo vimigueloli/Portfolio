@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import api from "@/services/api";
 import Projects from "@/components/projects";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import Header from "@/components/header";
 
 export default function Home() {
     const [data, setData] = useState<any>();
@@ -18,18 +20,21 @@ export default function Home() {
     }, []);
 
     return (
-        <main className={`bg-black w-screen h-screen overflow-auto`}>
-            <div className="text-white line-center flex-wrap gap-8 text-3xl my-12">
-                <div className="line-center w-full">
-                    <div className="w-32 h-32 rounded-full border overflow-hidden border-white">
-                        <img src={data?.avatar_url} />
-                    </div>
-                </div>
-                <div className="w-full line-center">{data?.name}</div>
-                <div className="w-full line-center px-12 text-justify text-xl">
-                    {data?.bio}
-                </div>
-            </div>
+        <main
+            className={`bg-repeat w-screen h-screen overflow-auto p-4 sm:p-0`}
+            /*style={{
+                backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/024/790/022/original/colorful-memphis-style-seamless-pattern-abstract-geometric-shapes-funky-modern-design-and-80s-memphis-style-background-vector.jpg)`,
+            }}*/
+            style={{
+                backgroundImage: `url(https://img.freepik.com/premium-vector/colorful-memphis-design-seamless-pattern-with-white-background_197792-859.jpg)`,
+            }}
+            /*
+            style={{
+                backgroundImage: `url(https://st2.depositphotos.com/3242059/8796/v/450/depositphotos_87965560-stock-illustration-seamless-geometric-vintage-pattern.jpg)`,
+            }}*/
+        >
+            <Header data={data} />
+
             <div className="line-center gap-16 flex-wrap pb-32">
                 <Projects />
             </div>
