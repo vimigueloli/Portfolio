@@ -18,9 +18,9 @@ export default function FlatProject({ project, id }: ProjectProps) {
             href={project.homepageUrl}
             target="_blank"
             title={`Abrir ${handleTitles(project.name)}`}
-            className={`w-72 h-72 st:w-96 st:h-[435px] bg-[#F2F0E9] text-[#343131] cursor-pointer hover:scale-110 with-transition`}
+            className={`w-72 st:w-96 h-[400px] st:h-[435px] bg-[#F2F0E9] text-[#343131] cursor-pointer hover:scale-110 with-transition`}
         >
-            <div className="w-72 st:w-96 h-[435px] absolute line-center items-end">
+            <div className="w-72 st:w-96 h-[400px] st:h-[435px] absolute line-center items-end">
                 <div
                     className={`absolute w-72 st:w-96 h-6  text-right px-2  font-bold font-mono text-lg p-0 text-[#F2F0E9]`}
                     style={{
@@ -42,18 +42,18 @@ export default function FlatProject({ project, id }: ProjectProps) {
             >
                 <FaGithub size={25} />
             </a>
-            <div className="line-center w-full pt-4 text-justify font-mono font-semibold text-4xl">
+            <div className="line-center w-full px-6 st:px-4 pt-4 text-center st:text-justify font-mono font-semibold text-3xl st:text-4xl">
                 {handleTitles(project.name)}
             </div>
-            <div className="line-center text-justify h-32 px-4 text-sm">
+            <div className="line-center text-justify h-32 px-6 st:px-4 text-sm">
                 {project.shortDescriptionHTML}
             </div>
-            <div className="line-center w-full">
+            <div className="line-center mt-4 st:mt-0 w-full">
                 <a
                     href={project.homepageUrl}
                     target="_blank"
                     title={`Abrir ${handleTitles(project.name)}`}
-                    className="w-[250px] bg-green-500 h-[150px] items-end line-center"
+                    className="w-[200px] st:w-[250px] bg-green-500 h-[100px] st:h-[150px] items-end line-center"
                 >
                     <img
                         src={project.openGraphImageUrl}

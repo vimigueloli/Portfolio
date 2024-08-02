@@ -11,7 +11,7 @@ export default function FlatBackground({ children }: BackgroundProps) {
 
     return (
         <main
-            className={`w-screen h-screen overflow-y-auto p-4 sm:p-0 relative bg-[#F2F0E9]`}
+            className={`w-screen h-screen overflow-y-auto p-0 relative bg-[#F2F0E9]`}
             // className={`bg-stone-300 w-screen h-screen overflow-y-auto p-4 sm:p-0 relative bg-gradient-to-t from-[#B9B7AF]  to-[#F2F0E9]`}
             /*style={{
                 backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/024/790/022/original/colorful-memphis-style-seamless-pattern-abstract-geometric-shapes-funky-modern-design-and-80s-memphis-style-background-vector.jpg)`,
