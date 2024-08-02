@@ -7,6 +7,7 @@ import { pinnedProjects } from "@/services/queriesGQL";
 import { LoaderIcon } from "react-hot-toast";
 import Project from "../project";
 import VintageInternetProjects from "./vintageInternetProjects";
+import styleTypes from "@/styles/stylesTypes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,13 +28,6 @@ export default function Projects() {
 
     console.log(data.user.pinnedItems.nodes);
 
-    return <VintageInternetProjects data={data} />;
-    /*
-    return (
-        <div className="line-center flex-wrap gap-16 w-full h-full text-white">
-            {data.user.pinnedItems.nodes.map((item: any) => (
-                <Project id={item.id} project={item} />
-            ))}
-        </div>
-    );*/
+    const Element = styleTypes[`${process.env.STYLE}`].Projects;
+    return <Element data={data} />;
 }

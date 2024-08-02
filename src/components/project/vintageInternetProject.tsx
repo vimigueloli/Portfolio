@@ -24,7 +24,8 @@ export default function VintageInternetProject({ project, id }: ProjectProps) {
             href={project.homepageUrl}
             target="_blank"
             title={`Abrir ${handleTitles(project.name)}`}
-            className={`w-72 h-72 st:w-96 st:h-96  -translate-x-2 -translate-y-2  border-4 border-[${sortRandonColor()}] text-[#011826] cursor-pointer hover:scale-110 with-transition`}
+            style={{ borderColor: sortRandonColor() }}
+            className={`w-72 h-72 st:w-96 st:h-96  -translate-x-2 -translate-y-2  border-4 text-[#011826] cursor-pointer hover:scale-110 with-transition`}
         >
             <div className=" translate-x-2 translate-y-2 line-between overflow-hidden relative flex-col bg-white w-72 h-72 st:w-96 st:h-96 border border-[#011826]">
                 <div className="w-full h-full line-right items-start absolute p-4 -translate-y-1 translate-x-2">
@@ -42,7 +43,8 @@ export default function VintageInternetProject({ project, id }: ProjectProps) {
                 </div>
                 <div className="line-center w-full pt-4 font-semibold text-2xl">
                     <div
-                        className={`border-b-8 border-[${sortRandonColor()}] -translate-y-3 -translate-x-2`}
+                        className={`border-b-8  -translate-y-3 -translate-x-2`}
+                        style={{ borderColor: sortRandonColor() }}
                     >
                         <div className="translate-x-2 translate-y-3">
                             {handleTitles(project.name)}

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import VintageInternetProject from "./vintageInternetProject";
+import styleTypes from "@/styles/stylesTypes";
 
 interface RepoProps {
     id: any;
@@ -44,39 +45,6 @@ export function handleTitles(title: string) {
 }
 
 export default function Project({ id, project }: ProjectProps) {
-    return <VintageInternetProject project={project} id={id} />;
-    /*
-    return (
-        <a
-            href={project.homepageUrl}
-            target="_blank"
-            title={`Abrir ${handleTitles(project.name)}`}
-            className="line-between overflow-hidden relative flex-col w-96 h-96 rounded-xl border border-white text-white cursor-pointer hover:scale-110 with-transition"
-        >
-            <div className="w-full h-full line-right items-end absolute p-4 ">
-                <a
-                    href={project.url}
-                    target="_blank"
-                    title={`Repositório ${handleTitles(project.name)}`}
-                    className="w-10 h-10 rounded-md bg-black border border-transparent with-transition shadow-xl z-50 line-center hover:border-white"
-                >
-                    <FaGithub size={25} />
-                </a>
-            </div>
-            <div className="line-center w-full pt-4 font-semibold text-2xl">
-                {handleTitles(project.name)}
-            </div>
-            <div className="line-center text-justify px-4 text-xs">
-                {project.shortDescriptionHTML}
-            </div>
-            <a
-                href={project.homepageUrl}
-                target="_blank"
-                title={`Abrir ${handleTitles(project.name)}`}
-                className="w-full h-2/3 items-end line-center"
-            >
-                <img src={project.openGraphImageUrl} />
-            </a>
-        </a>
-    );*/
+    const Element = styleTypes[`${process.env.STYLE}`].Project;
+    return <Element project={project} id={id} />;
 }
