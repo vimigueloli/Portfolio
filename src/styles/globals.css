@@ -10,6 +10,17 @@
     font-family: 'Inter', sans-serif;
 }
 
+@font-face {
+ font-family: "collage";
+ src: local("collage"),
+  url("../../public/RetromaVibesRegular-rgwXB.ttf") format("truetype");
+ font-weight: bold;
+}
+
+.font-face-collage {
+  font-family: "collage";
+}
+
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
