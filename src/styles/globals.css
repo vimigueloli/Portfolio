@@ -20,6 +20,16 @@
 .font-face-collage {
   font-family: "collage";
 }
+@font-face {
+ font-family: "punk";
+ src: local("punk"),
+  url("../../public/Punktype.ttf") format("truetype");
+ font-weight: bold;
+}
+
+.font-face-punk {
+  font-family: "punk";
+}
 
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,

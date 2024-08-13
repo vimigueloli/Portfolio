@@ -5,12 +5,15 @@ import PunkBackground from "@/components/background/punkBackground"
 import VintageInternetBackground from "@/components/background/vintageInternetBackground"
 import CollageHeader from "@/components/header/collageHeader"
 import FlatHeader from "@/components/header/flatHeader"
+import PunkHeader from "@/components/header/punkHeader"
 import VintageInternetHeader from "@/components/header/vintageInternetHeader"
 import CollageProject from "@/components/project/collageProject"
 import FlatProject from "@/components/project/flatProject"
+import PunkProject from "@/components/project/punkProject"
 import VintageInternetProject from "@/components/project/vintageInternetProject"
-import CollageProjects from "@/components/projects/CollageProjects"
+import CollageProjects from "@/components/projects/collageProjects"
 import FlatProjects from "@/components/projects/flatProjects"
+import PunkProjects from "@/components/projects/punkProjects"
 import VintageInternetProjects from "@/components/projects/vintageInternetProjects"
 
 const styleTypes:any = {
@@ -43,15 +46,17 @@ const styleTypes:any = {
     },
     punk:{
         Background:PunkBackground,
-        Header: CollageHeader,
-        Projects: CollageProjects,
-        Project: CollageProject,
+        Header: PunkHeader,
+        Projects: PunkProjects,
+        Project: PunkProject,
         bg:[
             "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/aba33f82665583.5d24a257add94.jpg",
             "https://img.freepik.com/free-photo/concrete-wall-scratched-material-background-texture-concept_53876-16281.jpg",
             "https://images7.alphacoders.com/131/1316580.jpeg",
             "https://media.istockphoto.com/id/1173351352/photo/sticker-background.jpg?s=612x612&w=0&k=20&c=WFhRx0I_YhGDQqL1Qnf6RF3IiUEJxs0oTtS3ocC5rVA=",
-            "https://cdn.donmai.us/sample/11/a3/__spider_punk_marvel_and_3_more_drawn_by_leonardo_vincent__sample-11a39aa86429728014e1fe83e48ec4b6.jpg"
+            "https://cdn.donmai.us/sample/11/a3/__spider_punk_marvel_and_3_more_drawn_by_leonardo_vincent__sample-11a39aa86429728014e1fe83e48ec4b6.jpg",
+            "https://img.freepik.com/free-vector/grunge-monochrome-painted-abstract-pattern-background_53876-25664.jpg",
+            "https://png.pngtree.com/png-vector/20220319/ourmid/pngtree-vector-background-with-seamless-halftone-pattern-gradually-fading-out-height-of-15-shapes-vector-png-image_29933136.jpg",
             ],
         repeatBg:[
             "https://icon-park.com/imagefiles/noize_background_black.png",

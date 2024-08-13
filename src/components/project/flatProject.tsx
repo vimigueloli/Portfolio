@@ -14,15 +14,15 @@ export default function FlatProject({ project, id }: ProjectProps) {
     console.log("projeto =>", project.primaryLanguage.name.toLowerCase());
 
     return (
-        <a
-            href={project.homepageUrl}
-            target="_blank"
-            title={`Abrir ${handleTitles(project.name)}`}
-            className={`w-72 st:w-96 h-[400px] st:h-[435px] bg-[#F2F0E9] text-[#343131] cursor-pointer hover:scale-110 with-transition`}
+        <div
+            //href={project.homepageUrl}
+            //target="_blank"
+            //title={`Abrir ${handleTitles(project.name)}`}
+            className={`w-72 st:w-96 h-[400px] st:h-[435px] bg-[#F2F0E9] text-[#343131]  hover:scale-110 with-transition`}
         >
             <div className="w-72 st:w-96 h-[400px] st:h-[435px] absolute line-center items-end">
                 <div
-                    className={`absolute w-72 st:w-96 h-6  text-right px-2  font-bold font-mono text-lg p-0 text-[#F2F0E9]`}
+                    className={`absolute w-72 st:w-96 h-6  text-right px-2 z-50 font-bold font-mono text-lg p-0 text-[#F2F0E9]`}
                     style={{
                         backgroundColor:
                             //@ts-ignore
@@ -38,7 +38,7 @@ export default function FlatProject({ project, id }: ProjectProps) {
                 href={project.url}
                 target="_blank"
                 title={`Repositório ${handleTitles(project.name)}`}
-                className="w-6 h-6 st:w-10 st:h-10  bg-[#343131]  text-[#F2F0E9] border-2 border-transparent with-transition shadow-xl z-50 line-center relative "
+                className="w-6 h-6 st:w-10 st:h-10   bg-[#343131]  text-[#F2F0E9] with-transition hover:bg-[#f2f0e9] hover:text-[#343131] border-2 border-transparent with-transition shadow-xl z-50 line-center relative "
             >
                 <FaGithub size={25} />
             </a>
@@ -48,12 +48,12 @@ export default function FlatProject({ project, id }: ProjectProps) {
             <div className="line-center text-justify h-32 px-6 st:px-4 text-sm">
                 {project.shortDescriptionHTML}
             </div>
-            <div className="line-center mt-4 st:mt-0 w-full">
+            <div className="line-center mt-6 st:mt-0 w-full z-50 cursor-pointer">
                 <a
                     href={project.homepageUrl}
                     target="_blank"
                     title={`Abrir ${handleTitles(project.name)}`}
-                    className="w-[200px] st:w-[250px] bg-green-500 h-[100px] st:h-[150px] items-end line-center"
+                    className="w-[200px] st:w-[250px] bg-green-500 z-50 h-[100px] st:h-[125px] items-end line-center"
                 >
                     <img
                         src={project.openGraphImageUrl}
@@ -61,6 +61,6 @@ export default function FlatProject({ project, id }: ProjectProps) {
                     />
                 </a>
             </div>
-        </a>
+        </div>
     );
 }
