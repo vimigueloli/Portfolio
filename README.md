@@ -154,5 +154,5 @@ Para alterar a imagem de exibição vá até as configurações do repositório,
 ![landing page](./public/prints/repo_config_7.png)
 
 E pronto! Seu projeto esta configurado corretamente para o portfolio.
-
+<br/>
 ![landing page](./public/prints/repo_config_8.png)
