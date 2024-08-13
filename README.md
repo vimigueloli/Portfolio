@@ -93,7 +93,7 @@ STYLE=flat
 O design do portfolio ficará desse jeito:
 ![landing page](./public/prints/flat.png)
 
-#### Estilo Menphis
+#### Estilo Memphis
 
 A variável de ambiente deve ficar assim: 
 ```env
