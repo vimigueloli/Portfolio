@@ -62,7 +62,7 @@ Agora siga as seguintes configurações para que o token permita o projeto acess
 
 Após preencher essas opções crie o token e o adicione como variavel de ambiente de seu projeto no campo GQL_TOKEN.
 
-```
+```env
 GQL_TOKEN=seutoken
 ```
 
@@ -77,7 +77,7 @@ O projeto consome apenas as informações publicas dos usuários do github entã
 
 Com isso suas variáveis de ambiente devem conter as seguintes informações até o momento:
 
-```
+```env
 GQL_TOKEN=seu_token
 USER=username_github
 ```
@@ -89,7 +89,7 @@ Por fim para que o portfolio tenha um pouco mais de personalidade deixei prepara
 #### Estilo Flat
 
 A variável de ambiente deve ficar assim: 
-```
+```env
 STYLE=flat
 ```
 O design do portfolio ficará desse jeito:
@@ -98,7 +98,7 @@ O design do portfolio ficará desse jeito:
 #### Estilo Menphis
 
 A variável de ambiente deve ficar assim: 
-```
+```env
 STYLE=vintageInternet
 ```
 O design do portfolio ficará desse jeito:
@@ -107,7 +107,7 @@ O design do portfolio ficará desse jeito:
 #### Estilo Colagem
 
 A variável de ambiente deve ficar assim: 
-```
+```env
 STYLE=collage
 ```
 O design do portfolio ficará desse jeito:
@@ -116,7 +116,7 @@ O design do portfolio ficará desse jeito:
 #### Estilo Punk
 
 A variável de ambiente deve ficar assim: 
-```
+```env
 STYLE=punk
 ```
 O design do portfolio ficará desse jeito:
@@ -138,6 +138,7 @@ Para alterar a descrição do projeto você deve ir nas configurações do "sobr
 ![landing page](./public/prints/repo_config_3.png)
 
 Agora o projeto vai apresentar essa descrição em seu card
+
 ![landing page](./public/prints/repo_config_4.png)
 
 #### Link do site publicado
