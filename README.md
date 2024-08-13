@@ -27,8 +27,6 @@ Para configurar o projeto, basta configurar as variaveis de ambiente corretament
 GQL_TOKEN=
 USER=
 STYLE=
-REPEAT=false
-BG=0
 ```
 
 A seguir vou detalhar como preenher cara um dos itens das variáveis de ambiente.
@@ -99,7 +97,7 @@ O design do portfolio ficará desse jeito:
 
 A variável de ambiente deve ficar assim: 
 ```env
-STYLE=vintageInternet
+STYLE=memphis
 ```
 O design do portfolio ficará desse jeito:
 ![landing page](./public/prints/menphis.png)

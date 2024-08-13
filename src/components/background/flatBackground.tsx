@@ -25,7 +25,7 @@ export default function FlatBackground({ children }: BackgroundProps) {
             <div
                 className="fixed w-screen h-screen bg-center mix-blend-difference opacity-30"
                 style={{
-                    backgroundImage: `url(${bgList[Number(process.env.BG)]})`,
+                    backgroundImage: `url(${bgList[0]})`,
                 }}
             />
 

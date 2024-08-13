@@ -17,7 +17,7 @@ import PunkProjects from "@/components/projects/punkProjects"
 import VintageInternetProjects from "@/components/projects/vintageInternetProjects"
 
 const styleTypes:any = {
-    vintageInternet:{
+    memphis:{
         Background:VintageInternetBackground,
         Header: VintageInternetHeader,
         Projects: VintageInternetProjects,
